@@ -4,7 +4,7 @@ A simple bot that transcribes conversations using [discord-speech-recognition](h
 
 ## Setup
 
-First, make a new `.env` file. Make sure you have your .env file set up like this:
+Make a new `.env` file. This will contain all of your necessary bot information. Make sure you have your .env file set up like this:
 
 ```dotenv
 BOTTOKEN=Your.bot.token
