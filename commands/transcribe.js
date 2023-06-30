@@ -1,6 +1,5 @@
 const { EmbedBuilder, SlashCommandBuilder } = require('discord.js');
 const { joinVoiceChannel } = require(`@discordjs/voice`);
-const fs = require('node:fs').promises;
 
 module.exports = {
 	data: new SlashCommandBuilder()
@@ -34,7 +33,7 @@ module.exports = {
             .setTitle('Transcribing...')
             .setDescription('Your voice will be transcribed in this channel now.')
             .setColor(0x22FF55)
-            .setFooter({text: `Requested by ${interaction.user.tag}`, iconURL: interaction.user.displayAvatarURL({ dynamic: true })})
+            .setFooter({text: `Requested by ${interaction.user.username}`, iconURL: interaction.user.displayAvatarURL({ dynamic: true })})
             .setTimestamp();
 
         await interaction.reply({embeds: [embed]});
