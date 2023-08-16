@@ -16,5 +16,3 @@ module.exports = {
                 channel.send({ embeds: [embed] });
 	},
 };
-
-// TODO: Get key for speech from: https://www.chromium.org/developers/how-tos/api-keys/
